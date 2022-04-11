@@ -20,8 +20,15 @@
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
+    "eslint": "^8.12.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
     "html-webpack-plugin": "^5.5.0",
+    "husky": "^7.0.4",
     "jest": "^27.4.2",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
     "style-loader": "^3.3.1",
     "ts-jest": "^27.0.7",
     "ts-loader": "^9.2.6",
@@ -34,7 +41,11 @@
   "scripts": {
     "start": "webpack serve --config webpack/webpack.config.js --env env=dev --port 3000 --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
+    "prettier:fix": "prettier --write",
+    "prettier:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -46,5 +57,11 @@
   "bugs": {
     "url": "https://github.com/maheshkancha/react-playground/issues"
   },
-  "homepage": "https://github.com/maheshkancha/react-playground#readme"
+  "homepage": "https://github.com/maheshkancha/react-playground#readme",
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "npm run prettier:fix",
+      "npm run lint:fix"
+    ]
+  }
 }

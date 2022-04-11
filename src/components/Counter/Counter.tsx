@@ -1,5 +1,5 @@
-import React from "react";
-import "./Counter.css";
+import React from 'react';
+import './Counter.css';
 
 const Counter = () => {
   const [count, setCount] = React.useState(0);
@@ -13,21 +13,21 @@ const Counter = () => {
   };
 
   return (
-    <div className="counter-container">
+    <div className='counter-container'>
       <h2>Counter by {process.env.name}</h2>
       <h3>Count value is {count}</h3>
       <div>
         <input
-          type="button"
-          name="decrement"
-          value="Decrement"
+          type='button'
+          name='decrement'
+          value='Decrement'
           disabled={count === 0}
           onClick={decrement}
         />
         <input
-          type="button"
-          name="increment"
-          value="Increment"
+          type='button'
+          name='increment'
+          value='Increment'
           onClick={increment}
         />
       </div>
