@@ -1,23 +1,26 @@
 {
+    "parser": "@typescript-eslint/parser",
     "extends": [
         "eslint:recommended",
         "plugin:import/errors",
         "plugin:react/recommended",
-        "plugin:jsx-a11y/recommended"
+        "plugin:jsx-a11y/recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
-    "plugins": ["react", "import", "jsx-a11y"],
+    "plugins": ["react", "import", "jsx-a11y", "@typescript-eslint"],
     "rules": {
         "react/prop-types": 0,
         "indent": ["error", 2],
         "linebreak-style": 1,
         "quotes": ["error", "single"],
-        "import/no-unresolved": "error"
+        "import/no-unresolved": "error",
+        "@typescript-eslint/rule-name": "error"
     },
     "parserOptions": {
         "ecmaVersion": 2021,
         "sourceType": "module",
         "ecmaFeatures": {
-        "jsx": true
+            "jsx": true
         }
     },
     "env": {

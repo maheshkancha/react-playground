@@ -18,6 +18,8 @@
     "@types/node": "^16.11.11",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "eslint": "^8.12.0",
@@ -39,7 +41,7 @@
     "webpack-merge": "^5.8.0"
   },
   "scripts": {
-    "start": "webpack serve --config webpack/webpack.config.js --env env=dev --port 3000 --open",
+    "start": "webpack serve --config webpack/webpack.config.js --env env=dev --port 3100 --open",
     "build": "webpack --config webpack/webpack.config.js --env env=prod",
     "test": "jest",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
@@ -60,8 +62,7 @@
   "homepage": "https://github.com/maheshkancha/react-playground#readme",
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "npm run prettier:fix",
-      "npm run lint:fix"
+      "npm run prettier:fix"
     ]
   }
 }

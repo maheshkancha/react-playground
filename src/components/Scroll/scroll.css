@@ -1,0 +1,85 @@
+.scroll_container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.left_section_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 70px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: snow;
+}
+
+.right_section_container {
+    width: 50%;
+    height: 550px;
+    border: 1px solid lightseagreen;
+    overflow-y: auto;
+    padding: 0 10px;
+}
+
+.para_1 {
+    color: blue;
+}
+
+.para_2 {
+    color: crimson;
+}
+
+.para_3 {
+    color: olive;
+}
+
+.para_4 {
+    color: steelblue;
+}
+
+.para_5 {
+    color: wheat;
+}
+
+.para_6 {
+    color: blueviolet;
+}
+
+.para_7 {
+    color: tomato;
+}
+
+.para_8 {
+    color: mediumseagreen;
+}
+
+.para_9 {
+    color: lemonchiffon;
+}
+
+.para_10 {
+    color: black;
+}
+
+.para_11 {
+    color: tomato;
+}
