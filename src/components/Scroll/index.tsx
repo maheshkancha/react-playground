@@ -15,7 +15,7 @@ const buttonList = [
   { name: 'Para 11', value: 'para_11' },
 ];
 
-export const Scroll = () => {
+const Scroll = () => {
   const scrollToPara = (value: string) => {
     const scrollingDiv = document.querySelector('.right_section_container');
     const elementInDiv = document.querySelector(`.${value}`);
@@ -215,3 +215,5 @@ export const Scroll = () => {
     </div>
   );
 };
+
+export default Scroll;
