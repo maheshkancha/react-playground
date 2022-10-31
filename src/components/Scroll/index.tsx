@@ -1,4 +1,3 @@
-import React from 'react';
 import './scroll.css';
 
 const buttonList = [
@@ -17,8 +16,8 @@ const buttonList = [
 
 const Scroll = () => {
   const scrollToPara = (value: string) => {
-    const scrollingDiv = document.querySelector('.right_section_container');
-    const elementInDiv = document.querySelector(`.${value}`);
+    const scrollingDiv = document.querySelector('.right_section_container') as HTMLDivElement;
+    const elementInDiv = document.querySelector(`.${value}`) as HTMLDivElement;
     scrollingDiv?.scrollTo({
       top: elementInDiv?.offsetTop - 10,
       behavior: 'smooth',
